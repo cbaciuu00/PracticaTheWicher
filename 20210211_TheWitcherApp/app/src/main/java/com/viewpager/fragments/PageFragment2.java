@@ -21,7 +21,8 @@ public class PageFragment2 extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         ViewGroup rootView = (ViewGroup) inflater
-                .inflate(R.layout.activity_alchemy_menu,container
+                .inflate(R.layout.activity_alchemy_menu
+                        ,container
                         ,false);
         return rootView;
     }

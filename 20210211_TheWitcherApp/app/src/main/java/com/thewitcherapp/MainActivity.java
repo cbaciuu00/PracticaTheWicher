@@ -53,8 +53,13 @@ public class MainActivity extends AppCompatActivity{
         pager.setAdapter(pagerAdapter);
     }
 
-    /*public void toBestiary(View view) {
-        Intent i = new Intent(this,BestiaryActivity.class);
+    public void toBestiary(View view) {
+        Intent i = new Intent(MainActivity.this,BestiaryActivity.class);
         startActivity(i);
-    }*/
+    }
+
+    public void toAlchemy(View view) {
+        Intent i = new Intent(MainActivity.this,AlchemyActivity.class);
+        startActivity(i);
+    }
 }

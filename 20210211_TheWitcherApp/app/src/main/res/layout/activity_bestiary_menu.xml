@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BestiaryMenu"
+    tools:context=".MainActivity"
     android:background="@drawable/witcher_background1"
     android:orientation="vertical">
 
@@ -48,17 +48,13 @@
                     android:background="@drawable/rodona">
                 </TextView>
                 <ImageView
+                    android:id="@+id/btnToBestiary"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
-                    android:padding="20dp"
-                    android:src="@drawable/logo_bestiary">
+                    android:layout_margin="20dp"
+                    android:background="@drawable/logo_bestiary"
+                    android:onClick="toBestiary">
                 </ImageView>
-                <Button
-                    android:id="@+id/btnToBestiary"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:visibility="invisible">
-                </Button>
             </RelativeLayout>
             <TextView
                 android:layout_width="wrap_content"

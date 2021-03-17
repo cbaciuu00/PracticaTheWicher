@@ -21,7 +21,8 @@ public class PageFragment1 extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         ViewGroup rootView = (ViewGroup) inflater
-                .inflate(R.layout.activity_bestiary_menu,container
+                .inflate(R.layout.activity_bestiary_menu
+                        ,container
                         ,false);
         return rootView;
     }
