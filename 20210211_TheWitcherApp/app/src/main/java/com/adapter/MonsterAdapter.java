@@ -46,8 +46,8 @@ public class MonsterAdapter extends RecyclerView.Adapter<MonsterAdapter.ViewHold
         holder.txvNom.setText(actual.getTitle());
         int drawableResourceId = aContext.getResources().getIdentifier(actual.getImage(), "drawable", aContext.getPackageName());
         holder.imvSprite.setImageResource(drawableResourceId);
-        boolean iSeleccionat = this.isSeleccionat == position;
-        holder.itemView.setSelected(iSeleccionat);
+        /*boolean iSeleccionat = this.isSeleccionat == position;
+        holder.itemView.setSelected(iSeleccionat);*/
     }
 
     @Override

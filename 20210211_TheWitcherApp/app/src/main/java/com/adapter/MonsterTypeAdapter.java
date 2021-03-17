@@ -12,10 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.Bestiary;
-import com.example.Monster;
 import com.example.MonsterType;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.thewitcherapp.MainActivity;
 import com.thewitcherapp.R;
 
 import java.util.List;
