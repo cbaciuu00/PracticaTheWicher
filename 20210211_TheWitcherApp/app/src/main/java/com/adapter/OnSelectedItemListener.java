@@ -4,6 +4,6 @@ import com.example.MonsterType;
 
 public interface OnSelectedItemListener {
 
-    void onSelectedItem(MonsterType filaSeleccionada);
+    void onSelectedItem(MonsterType monsterTypeSeleccionat);
 
 }

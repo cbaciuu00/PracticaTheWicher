@@ -28,6 +28,7 @@
                 android:layout_height="40dp"
                 android:text="hola buenos dias"
                 android:textAlignment="center"
+                android:textSize="25dp"
                 android:fontFamily="@font/the_witcher">
             </TextView>
             <LinearLayout

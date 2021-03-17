@@ -26,40 +26,6 @@ public class Bestiary {
         this.sections = sections;
     }
 
-    public Bestiary loadBestiary() {
-        String json = loadJSON();
-        Gson gson = new Gson();
-        return gson.fromJson(json, Bestiary.class);
-    }
-
-    private String loadJSON(){
-        String json = "";
-        InputStream is = null;
-        try {
-            //is = getResources().openRawResource(R.raw.bestiary);
-            InputStreamReader reader = new InputStreamReader(is);
-            BufferedReader reader2 = new BufferedReader(reader);
-
-            String line = "";
-            try {
-                while ((line = reader2.readLine()) != null) {
-                    json += line + "\n";
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-                return null;
-            }
-        } finally {
-            if(is!=null) {
-                try {
-                    is.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        return json;
-    }
 
     @Override
     public String toString() {
