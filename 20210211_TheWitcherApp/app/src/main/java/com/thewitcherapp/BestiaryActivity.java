@@ -20,7 +20,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
 
-public class BestiaryList extends AppCompatActivity implements OnSelectedItemListener {
+public class BestiaryActivity extends AppCompatActivity implements OnSelectedItemListener {
 
     private MonsterTypeAdapter mAdapter;
     private MonsterAdapter aMonsterAdapter;
@@ -28,10 +28,11 @@ public class BestiaryList extends AppCompatActivity implements OnSelectedItemLis
     private RecyclerView mRcyMonster;
     private List<Monster> mMonster;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bestiary_list);
+        setContentView(R.layout.activity_bestiary);
 
         mRcyMonsterType = findViewById(R.id.rcyMonsterType);
         mRcyMonsterType.setLayoutManager(
@@ -80,7 +81,6 @@ public class BestiaryList extends AppCompatActivity implements OnSelectedItemLis
         return json;
     }
 
-
     @Override
     public void onSelectedItem(MonsterType monsterTypeSeleccionat) {
         mRcyMonster = findViewById(R.id.rcyMonster);
@@ -93,4 +93,6 @@ public class BestiaryList extends AppCompatActivity implements OnSelectedItemLis
         aMonsterAdapter = new MonsterAdapter(monsterTypeSeleccionat,this,mMonster);
         mRcyMonster.setAdapter(aMonsterAdapter);
     }
+
+
 }

@@ -7,8 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.Slide;
+import android.view.View;
+import android.widget.Button;
 
 import com.adapter.MonsterAdapter;
 import com.adapter.MonsterTypeAdapter;
@@ -29,11 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
-    private MonsterTypeAdapter mAdapter;
-    private MonsterAdapter aMonsterAdapter;
-    private RecyclerView mRcyMonsterType;
-    private RecyclerView mRcyMonster;
-    private List<Monster> mMonster;
+
     private ViewPager pager;
     private PagerAdapter pagerAdapter;
 
@@ -42,6 +41,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         cargarViewPager();
+
     }
 
     private void cargarViewPager() {
@@ -52,4 +52,9 @@ public class MainActivity extends AppCompatActivity{
         pagerAdapter = new SlidePagerAdapter(getSupportFragmentManager(),list);
         pager.setAdapter(pagerAdapter);
     }
+
+    /*public void toBestiary(View view) {
+        Intent i = new Intent(this,BestiaryActivity.class);
+        startActivity(i);
+    }*/
 }

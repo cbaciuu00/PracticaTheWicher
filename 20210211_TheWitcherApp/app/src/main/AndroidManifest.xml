@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheWitcherApp">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AlchemyMenu"></activity>
+        <activity android:name=".BestiaryMenu" />
+        <activity android:name=".BestiaryActivity" />
+        <activity android:name=".AlchemyActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

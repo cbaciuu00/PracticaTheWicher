@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlchemyActivity"
+    android:orientation="vertical"
+    android:background="@drawable/image_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+            </Button>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/close">
+            </ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="B O M B S,   O I L S   A N D   P O T I O N S"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/dinpro_medium">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="A  L  C  H  E  M  Y"
+                android:textColor="@color/alchemy_title"
+                android:textAlignment="center"
+                android:fontFamily="@font/minion_pro_medium">
+            </TextView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ui_title_view_subtitle_line">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/alchemy_title"
+            android:text="BOMBS"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/alchemy_tipus"
+            android:fontFamily="@font/dinpro_bold"
+            android:layout_margin="12dp"
+            android:padding="10dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/alchemy_title"
+            android:text="OILS"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/alchemy_tipus"
+            android:fontFamily="@font/dinpro_bold"
+            android:layout_margin="12dp"
+            android:padding="10dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/alchemy_title"
+            android:text="POTIONS"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/alchemy_tipus"
+            android:fontFamily="@font/dinpro_bold"
+            android:layout_margin="12dp"
+            android:padding="10dp">
+            </TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

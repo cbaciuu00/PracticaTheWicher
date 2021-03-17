@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="DANCING STARTS"
+            android:fontFamily="@font/the_witcher"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:text="Produces a fiery explosion tan can cause nearby opoonents to start b.."
+            android:fontFamily="@font/dinpro_medium"
+            android:paddingLeft="20dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="ENHANCED"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="@drawable/ui_button_textured"
+                android:fontFamily="@font/dinpro_bold"
+                android:layout_margin="12dp"
+                android:padding="10dp">
+            </TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="SUPERIOR"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="@drawable/ui_button_textured"
+                android:fontFamily="@font/dinpro_bold"
+                android:layout_margin="12dp"
+                android:padding="10dp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bomb_dancingstar"
+            android:padding="23dp">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
