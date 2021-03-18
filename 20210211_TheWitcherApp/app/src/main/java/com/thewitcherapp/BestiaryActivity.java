@@ -1,6 +1,7 @@
 package com.thewitcherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,12 +14,18 @@ import com.example.Bestiary;
 import com.example.Monster;
 import com.example.MonsterType;
 import com.google.gson.Gson;
+import com.network.NetworkUtils;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
+
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 
 public class BestiaryActivity extends AppCompatActivity implements OnSelectedItemListener {
 
@@ -27,7 +34,9 @@ public class BestiaryActivity extends AppCompatActivity implements OnSelectedIte
     private RecyclerView mRcyMonsterType;
     private RecyclerView mRcyMonster;
     private List<Monster> mMonster;
-
+    //private Bestiary b;
+    //private String json;
+    //private Boolean aAcabat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +51,41 @@ public class BestiaryActivity extends AppCompatActivity implements OnSelectedIte
         mRcyMonsterType.setHasFixedSize(true);
         Bestiary b = loadBestiary();
         MonsterTypeAdapter aMonsterTypeAdapter;
-        aMonsterTypeAdapter = new MonsterTypeAdapter(b,this,this);
+        aMonsterTypeAdapter = new MonsterTypeAdapter(b,BestiaryActivity.this,this);
         mRcyMonsterType.setAdapter(aMonsterTypeAdapter);
+
+        /*Gson gson = new Gson();
+        // Crida assíncrona per descarregar el JSON
+        Observable.fromCallable(() -> {
+            //---------------- START OF THREAD ------------------------------------
+            // Això és el codi que s'executarà en un fil
+            aAcabat = false;
+            return NetworkUtils.getJSon("https://raw.githubusercontent.com/cbaciuu00/PracticaTheWicher/main/bestiary.json");
+            //--------------- END OF THREAD-------------------------------------
+        })
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe((retornInutil) -> {
+                    //-------------  UI THREAD ---------------------------------------
+                    // El codi que tenim aquí s'executa només quan el fil
+                    // ha acabat !! A més, aquest codi s'executa en el fil
+                    // d'interfície gràfica.
+                    b = loadBestiary(json);
+                    aAcabat = true;
+                    //-------------  END OF UI THREAD ---------------------------------------
+                });
+        if(aAcabat){
+            MonsterTypeAdapter aMonsterTypeAdapter;
+            aMonsterTypeAdapter = new MonsterTypeAdapter(b,BestiaryActivity.this,this);
+            mRcyMonsterType.setAdapter(aMonsterTypeAdapter);
+        }*/
+
     }
+
+    /*public Bestiary loadBestiary(String json) {
+        Gson gson = new Gson();
+        return gson.fromJson(json, Bestiary.class);
+    }*/
 
     public Bestiary loadBestiary() {
         String json = loadJSON();

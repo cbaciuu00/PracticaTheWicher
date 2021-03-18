@@ -62,4 +62,5 @@ public class MainActivity extends AppCompatActivity{
         Intent i = new Intent(MainActivity.this,AlchemyActivity.class);
         startActivity(i);
     }
+
 }

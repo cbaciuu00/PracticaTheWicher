@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.thewitcherapp">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheWitcherApp">
-        <activity android:name=".AlchemyMenu"></activity>
+        <activity android:name=".MonsterActivity"></activity>
+        <activity android:name=".AlchemyMenu" />
         <activity android:name=".BestiaryMenu" />
         <activity android:name=".BestiaryActivity" />
         <activity android:name=".AlchemyActivity" />

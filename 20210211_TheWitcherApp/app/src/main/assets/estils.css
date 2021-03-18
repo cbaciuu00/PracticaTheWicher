@@ -1,0 +1,20 @@
+#intro{
+    color: orange;
+    font-size: 25px;
+    font-family: minion_pro_medium;
+}
+#author{
+    color:grey;
+    font-size: 25px;
+    font-family: minion_pro_medium;
+}
+
+#detail{
+    color: white;
+    font-size: 25px;
+}
+
+@font-face{
+    font-family:'minion_pro_medium';
+    src: url('font/minion_pro_medium');
+}

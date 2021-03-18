@@ -43,7 +43,7 @@
                 android:text="B O M B S,   O I L S   A N D   P O T I O N S"
                 android:textColor="@color/white"
                 android:textAlignment="center"
-                android:paddingTop="5dp"
+                android:gravity="bottom"
                 android:fontFamily="@font/dinpro_medium">
             </TextView>
             <TextView

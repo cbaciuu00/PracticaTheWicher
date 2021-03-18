@@ -1,6 +1,7 @@
 package com.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.Monster;
 import com.example.MonsterType;
+import com.thewitcherapp.MonsterActivity;
 import com.thewitcherapp.R;
 
 import java.util.List;
@@ -60,7 +62,22 @@ public class MonsterAdapter extends RecyclerView.Adapter<MonsterAdapter.ViewHold
             super(itemView);
             imvSprite = itemView.findViewById(R.id.imvMonsterImg);
             txvNom = itemView.findViewById(R.id.txvMonsterName);
-            //itemView.setOnClickListener(new View.OnClickListener());
+            itemView.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    Intent  i = new Intent(aContext, MonsterActivity.class);
+                    Monster m = aMonster.get(getAdapterPosition());
+                    int drawableResourceId = aContext.getResources().getIdentifier(m.getImage(), "drawable", aContext.getPackageName());
+                    m.setMonsterType(aMonsterType.getTitle());
+                    i.putExtra("EXTRA_TITLE",m.getTitle());
+                    i.putExtra("EXTRA_INTRO",m.getIntro());
+                    i.putExtra("EXTRA_IMG",drawableResourceId);
+                    i.putExtra("EXTRA_AUTHOR",m.getAuthor());
+                    i.putExtra("EXTRA_DETAIL",m.getDetail());
+                    i.putExtra("EXTRA_MONSTER_TYPE",m.getMonsterType());
+                    aContext.startActivity(i);
+                }
+            });
         }
     }
 }

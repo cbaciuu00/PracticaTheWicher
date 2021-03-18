@@ -45,6 +45,7 @@
                 android:text="E N C Y C L O P E D I A   O F   E N E M I E S"
                 android:textColor="@color/white"
                 android:textAlignment="center"
+                android:gravity="bottom"
                 android:fontFamily="@font/dinpro_medium">
             </TextView>
             <LinearLayout

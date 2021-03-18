@@ -27,6 +27,7 @@ public class Monster {
     @SerializedName("expansion")
     @Expose
     private String expansion;
+    private String monsterType;
 
     public String getTitle() {
         return title;
@@ -67,6 +68,10 @@ public class Monster {
     public void setImage(String image) {
         this.image = image;
     }
+
+    public void setMonsterType(String monsterType){this.monsterType = monsterType;}
+
+    public String getMonsterType(){return monsterType;}
 
     public Vulnerabilities getVulnerabilities() {
         return vulnerabilities;
