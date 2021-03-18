@@ -1,0 +1,680 @@
+{
+	"bombs": [
+		{
+			"id": "dancing_star",
+			"image": "bomb_dancingstar",
+			"types": {
+				"standard": {
+					"name": "Dancing Star",
+					"effect": "Produces a fiery explosion that can cause nearby opponents to start burning.\nDestroys monster nests.\n+100 Fire damage"
+				},
+				"enhanced": {
+					"name": "Enhanced Dancing Star",
+					"effect": "Produces a fiery explosion that can cause nearby opponents to start burning. Enhanced effect.\nDestroys monster nests.\n+200 Fire damage"
+				},
+				"superior": {
+					"name": "Superior Dancing Star",
+					"effect": "Produces a fiery explosion that ignites the surrounding area. Enhanced and extended effect.\nDestroys monster nests.\n+300 Fire damage"
+				}
+			}
+		},
+		{
+			"id": "devils_puffball",
+			"image": "bomb_devilspuffball",
+			"types": {
+				"standard": {
+					"name": "Devil's Puffball",
+					"effect": "Releases a cloud of poison when detonated.\n10s Effect duration\n+100 Poison damage"
+				},
+				"enhanced": {
+					"name": "Enhanced Devil's Puffball",
+					"effect": "Releases a cloud of poison when detonated. Enhanced effect.\n30s Effect duration\n+100 Poison damage"
+				},
+				"superior": {
+					"name": "Superior Devil's Puffball",
+					"effect": "Releases a cloud of poison when detonated. Enhanced and extended effect.\n33s Effect duration\n+100 Poison damage"
+				}
+			}
+		},
+		{
+			"id": "dimeritium",
+			"image": "bomb_dimeritium",
+			"types": {
+				"standard": {
+					"name": "Dimeritium Bomb",
+					"effect": "Releases a cloud of dimeritium slivers that block magic and monsters' magic abilities.\n15s Effect duration"
+				},
+				"enhanced": {
+					"name": "Enhanced Dimeritium Bomb",
+					"effect": "Releases a cloud of dimeritium slivers that block magic and monsters' magic abilities.\n30s Effect duration"
+				},
+				"superior": {
+					"name": "Superior Dimeritium Bomb",
+					"effect": "Releases a cloud of dimeritium slivers that block magic and monsters' magic abilities. The blockade survives for a short time after the cloud dissipates.\n30s Effect duration"
+				}
+			}
+		},
+		{
+			"id": "dragons_dream",
+			"image": "bomb_dragonsdream",
+			"types": {
+				"standard": {
+					"name": "Dragon's Dream",
+					"effect": "Releases a cloud of gas that explodes when ignited.\n15s Effect duration\n+300 Fire damage"
+				},
+				"enhanced": {
+					"name": "Enhanced Dragon's Dream",
+					"effect": "Releases a cloud of gas that explodes when ignited. Enhanced effect and chance to apply Burning.\n30s Effect duration\n+400 Fire damage"
+				},
+				"superior": {
+					"name": "Superior Dragon's Dream",
+					"effect": "Releases a cloud of gas that exploded when ignited. Enhanced effect and chance to apply Burning. Foes it kills explode, wounding others nearby.\n30s Effect duration\n+400 Fire damage"
+				}
+			}
+		},
+		{
+			"id": "grapeshot",
+			"image": "bomb_grapeshot",
+			"types": {
+				"standard": {
+					"name": "Grapeshot",
+					"effect": "Inflicts shrapnel damage to foes within its explosion radius. Deals a small amount of fire damage.\nDestroys monster nests.\n+350 Physical damage\n+350 Silver damage\n+5 Fire damage"
+				},
+				"enhanced": {
+					"name": "Enhanced Grapeshot",
+					"effect": "Inflicts shrapnel damage to foes within its explosion radius. Deals fire damage. Enhanced effect.\nDestroys monster nests.\n+600 Physical damage\n+600 Silver damage\n+10 Fire damage"
+				},
+				"superior": {
+					"name": "Superior Grapeshot",
+					"effect": "Inflicts shrapnel damage to foes within its explosion radius. Deals fire damage. Enhanced effect. Damage ignores enemy armor.\nDestroys monster nests.\n+900 Physical damage\n+900 Silver damage\n+10 Fire damage"
+				}
+			}
+		},
+		{
+			"id": "moon_dust",
+			"image": "bomb_moondust",
+			"types": {
+				"standard": {
+					"name": "Moon Dust",
+					"effect": "Contains silver splinters that temporarily prevent monsters from transforming.\n20s Effect duration"
+				},
+				"enhanced": {
+					"name": "Enhanced Moon Dust",
+					"effect": "Contains silver splinters that temporarily prevent monsters from transforming. Extended duration.\n40s Effect duration"
+				},
+				"superior": {
+					"name": "Superior Moon Dust",
+					"effect": "Contains silver splinters that permanently prevent monsters from transforming."
+				}
+			}
+		},
+		{
+			"id": "northern_wind",
+			"image": "bomb_northernwind",
+			"types": {
+				"standard": {
+					"name": "Northern Wind",
+					"effect": "Freezes foes. Blows landed on frozen foes deal additional damage.\n4s Effect duration"
+				},
+				"enhanced": {
+					"name": "Enhanced Northern Wind",
+					"effect": "Freezes foes. Blows landed on frozen foes deal additional damage.\n4s Effect duration"
+				},
+				"superior": {
+					"name": "Superior Northern Wind",
+					"effect": "Freezes foes. Blows landed on frozen foes deal additional damage. Extended duration.\nChance of instant kill.\n10s Effect duration"
+				}
+			}
+		},
+		{
+			"id": "pheromone_bomb",
+			"image": "bomb_pheromone",
+			"types": {
+				"standard": {
+					"name": "Pheromone Bomb",
+					"effect": ""
+				}
+			}
+		},
+		{
+			"id": "samum",
+			"image": "bomb_samum",
+			"types": {
+				"standard": {
+					"name": "Samum",
+					"effect": "Blinds opponents within its explosion radius.\nDestroys monster nests."
+				},
+				"enhanced": {
+					"name": "Enhanced Samum",
+					"effect": "Blinds opponents within its explosion radius. Extended duration.\nDestroys monster nests.\n+600 Physical damage\n+600 Silver damage\n+10 Fire damage"
+				},
+				"superior": {
+					"name": "Superior Samum",
+					"effect": "Blinds opponents within its explosion radius. Extended duration. The first hit landed on a blinded opponent is always critical.\nDestroys monster nests.\n100% Critical hit chance\n8s Effect duration"
+				}
+			}
+		},
+		{
+			"id": "training_bomb",
+			"image": "bomb_training",
+			"types": {
+				"standard": {
+					"name": "Training Bomb",
+					"effect": ""
+				}
+			}
+		}
+	],
+	"oils": [
+		{
+			"id": "beast",
+			"types": {
+				"standard": {
+					"name": "Beast Oil",
+					"image": "oil_beast",
+					"effect": "10% Attack power versus Beasts"
+				},
+				"enhanced": {
+					"name": "Enhanced Beast Oil",
+					"image": "oil_beast_enhanced",
+					"effect": "25% Attack power versus Beasts"
+				},
+				"superior": {
+					"name": "Superior Beast Oil",
+					"image": "oil_beast_superior",
+					"effect": "50% Attack power versus Beasts"
+				}
+			}
+		},
+		{
+			"id": "cursed",
+			"types": {
+				"standard": {
+					"name": "Cursed Oil",
+					"image": "oil_cursed",
+					"effect": "10% Attack power versus Cursed Ones"
+				},
+				"enhanced": {
+					"name": "Enhanced Cursed Oil",
+					"image": "oil_cursed_enhanced",
+					"effect": "25% Attack power versus Cursed Ones"
+				},
+				"superior": {
+					"name": "Superior Cursed Oil",
+					"image": "oil_cursed_superior",
+					"effect": "50% Attack power versus Cursed Ones"
+				}
+			}
+		},
+		{
+			"id": "draconid",
+			"types": {
+				"standard": {
+					"name": "Draconid Oil",
+					"image": "oil_draconid",
+					"effect": "10% Attack power versus Draconids"
+				},
+				"enhanced": {
+					"name": "Enhanced Draconid Oil",
+					"image": "oil_draconid_enhanced",
+					"effect": "25% Attack power versus Draconids"
+				},
+				"superior": {
+					"name": "Superior Draconid Oil",
+					"image": "oil_draconid_superior",
+					"effect": "50% Attack power versus Draconids"
+				}
+			}
+		},
+		{
+			"id": "elementa",
+			"types": {
+				"standard": {
+					"name": "Elementa Oil",
+					"image": "oil_elementa",
+					"effect": "10% Attack power versus Elementa"
+				},
+				"enhanced": {
+					"name": "Enhanced Elementa Oil",
+					"image": "oil_elementa_enhanced",
+					"effect": "25% Attack power versus Elementa"
+				},
+				"superior": {
+					"name": "Superior Elementa Oil",
+					"image": "oil_elementa_superior",
+					"effect": "50% Attack power versus Elementa"
+				}
+			}
+		},
+		{
+			"id": "hanged_mans_venom",
+			"types": {
+				"standard": {
+					"name": "Hanged Man's Venom",
+					"image": "oil_hangedmansvenom",
+					"effect": "10% Attack power versus humans and nonhumans"
+				},
+				"enhanced": {
+					"name": "Enhanced Hanged Man's Venom",
+					"image": "oil_hangedmansvenom_enhanced",
+					"effect": "25% Attack power versus humans and nonhumans"
+				},
+				"superior": {
+					"name": "Superior Hanged Man's Venom",
+					"image": "oil_hangedmansvenom_superior",
+					"effect": "50% Attack power versus humans and nonhumans"
+				}
+			}
+		},
+		{
+			"id": "hybrid",
+			"types": {
+				"standard": {
+					"name": "Hybrid Oil",
+					"image": "oil_hybrid",
+					"effect": "10% Attack power versus Hybrids"
+				},
+				"enhanced": {
+					"name": "Enhanced Hybrid Oil",
+					"image": "oil_hybrid_enhanced",
+					"effect": "25% Attack power versus Hybrids"
+				},
+				"superior": {
+					"name": "Superior Hybrid Oil",
+					"image": "oil_hybrid_superior",
+					"effect": "50% Attack power versus Hybrids"
+				}
+			}
+		},
+		{
+			"id": "insectoid",
+			"types": {
+				"standard": {
+					"name": "Insectoid Oil",
+					"image": "oil_insectoid",
+					"effect": "10% Attack power versus Insectoids"
+				},
+				"enhanced": {
+					"name": "Enhanced Insectoid Oil",
+					"image": "oil_insectoid_enhanced",
+					"effect": "25% Attack power versus Insectoids"
+				},
+				"superior": {
+					"name": "Superior Insectoid Oil",
+					"image": "oil_insectoid_superior",
+					"effect": "50% Attack power versus Insectoids"
+				}
+			}
+		},
+		{
+			"id": "necrophage",
+			"types": {
+				"standard": {
+					"name": "Necrophage Oil",
+					"image": "oil_necrophage",
+					"effect": "10% Attack power versus Necrophages"
+				},
+				"enhanced": {
+					"name": "Enhanced Necrophage Oil",
+					"image": "oil_necrophage_enhanced",
+					"effect": "25% Attack power versus Necrophages"
+				},
+				"superior": {
+					"name": "Superior Necrophage Oil",
+					"image": "oil_necrophage_superior",
+					"effect": "50% Attack power versus Necrophages"
+				}
+			}
+		},
+		{
+			"id": "ogroid",
+			"types": {
+				"standard": {
+					"name": "Ogroid Oil",
+					"image": "oil_ogroid",
+					"effect": "10% Attack power versus Ogroids"
+				},
+				"enhanced": {
+					"name": "Enhanced Ogroid Oil",
+					"image": "oil_ogroid_enhanced",
+					"effect": "25% Attack power versus Ogroids"
+				},
+				"superior": {
+					"name": "Superior Ogroid Oil",
+					"image": "oil_ogroid_superior",
+					"effect": "50% Attack power versus Ogroids"
+				}
+			}
+		},
+		{
+			"id": "relict",
+			"types": {
+				"standard": {
+					"name": "Relict Oil",
+					"image": "oil_relict",
+					"effect": "10% Attack power versus Relicts"
+				},
+				"enhanced": {
+					"name": "Enhanced Relict Oil",
+					"image": "oil_relict_enhanced",
+					"effect": "25% Attack power versus Relicts"
+				},
+				"superior": {
+					"name": "Superior Relict Oil",
+					"image": "oil_relict_superior",
+					"effect": "50% Attack power versus Relicts"
+				}
+			}
+		},
+		{
+			"id": "specter",
+			"types": {
+				"standard": {
+					"name": "Specter Oil",
+					"image": "oil_specter",
+					"effect": "10% Attack power versus Specters"
+				},
+				"enhanced": {
+					"name": "Enhanced Specter Oil",
+					"image": "oil_specter_enhanced",
+					"effect": "25% Attack power versus Specters"
+				},
+				"superior": {
+					"name": "Superior Specter Oil",
+					"image": "oil_specter_superior",
+					"effect": "50% Attack power versus Specters"
+				}
+			}
+		},
+		{
+			"id": "vampire",
+			"types": {
+				"standard": {
+					"name": "Vampire Oil",
+					"image": "oil_vampire",
+					"effect": "10% Attack power versus Vampires"
+				},
+				"enhanced": {
+					"name": "Enhanced Vampire Oil",
+					"image": "oil_vampire_enhanced",
+					"effect": "25% Attack power versus Vampires"
+				},
+				"superior": {
+					"name": "Superior Vampire Oil",
+					"image": "oil_vampire_superior",
+					"effect": "50% Attack power versus Vampires"
+				}
+			}
+		}
+	],
+	"potions": [
+		{
+			"id": "black_blood",
+			"image": "potion_blackblood",
+			"types": {
+				"standard": {
+					"name": "Black Blood",
+					"effect": "Witcher's blood injures vampires and necrophages when they wound him.\n+15% Damage returned"
+				},
+				"enhanced": {
+					"name": "Enhanced Black Blood",
+					"effect": "Witcher's blood injures and knocks back vampires and necrophages when they wound him.\n+20% Damage returned"
+				},
+				"superior": {
+					"name": "Superior Black Blood",
+					"effect": "Vampires and necrophages start Bleeding when near the witcher. In addition, the witcher's blood injures and knocks them back when they wound him.\n+30% Damage returned"
+				}
+			}
+		},
+		{
+			"id": "blizzard",
+			"image": "potion_blizzard",
+			"types": {
+				"standard": {
+					"name": "Blizzard",
+					"effect": "Whenever you slay an enemy, time slows for a short period.\n+50% Slowdown"
+				},
+				"enhanced": {
+					"name": "Enhanced Blizzard",
+					"effect": "Whenever you slay an enemy, time slows for a short period. Extended duration.\n+55% Slowdown"
+				},
+				"superior": {
+					"name": "Superior Blizzard",
+					"effect": "Whenever you slay an enemy, time slows for a short period. If 3 Adrenaline Points are available, during this period actions don't deplete Stamina.\n+60% Slowdown"
+				}
+			}
+		},
+		{
+			"id": "cat",
+			"image": "potion_cat",
+			"types": {
+				"standard": {
+					"name": "Cat",
+					"effect": "Grants sight in total darkness.\n+25 Range of vision."
+				},
+				"enhanced": {
+					"name": "Enhanced Cat",
+					"effect": "Grants sight in total darkness and immunity to hypnosis. Extended duration.\n+25 Range of vision"
+				},
+				"superior": {
+					"name": "Superior Cat",
+					"effect": "Grants sight in total darkness and immunity to hypnosis. Extended duration.\n+25 Range of vision"
+				}
+			}
+		},
+		{
+			"id": "full_moon",
+			"image": "potion_fullmoon",
+			"types": {
+				"standard": {
+					"name": "Full Moon",
+					"effect": "Increases maximum Vitality.\n+300 Vitality"
+				},
+				"enhanced": {
+					"name": "Enhanced Full Moon",
+					"effect": "Increases maximum Vitality. Extended duration.\n+1100 Vitality"
+				},
+				"superior": {
+					"name": "Superior Full Moon",
+					"effect": "Increases maximum Vitality. Extended duration. Heals Vitality by an amount equal to current Toxicity\n+1500 Vitality"
+				}
+			}
+		},
+		{
+			"id": "golden_oriole",
+			"image": "potion_goldenoriole",
+			"types": {
+				"standard": {
+					"name": "Golden Oriole",
+					"effect": "Grants immunity to poisons, neutralizes the effects of poisons already in bloodstream."
+				},
+				"enhanced": {
+					"name": "Enhanced Golden Oriole",
+					"effect": "Grants immunity to poisons, neutralizes the effects of poisons already in bloodstream. Extended duration."
+				},
+				"superior": {
+					"name": "Superior Golden Oriole",
+					"effect": "Extended duration. Poisons now heal instead of doing damage."
+				}
+			}
+		},
+		{
+			"id": "killer_whale",
+			"image": "potion_killerwhale",
+			"types": {
+				"standard": {
+					"name": "Killer Whale",
+					"effect": "Increases breath supply while underwater by 50% and improves vision while diving.\n+50% breath"
+				}
+			}
+		},
+		{
+			"id": "maribor_forest",
+			"image": "potion_mariborforest",
+			"types": {
+				"standard": {
+					"name": "Maribor Forest",
+					"effect": "Accelerates the generation of Adrenaline Points.\n+0.15 Adrenaline Point gain"
+				},
+				"enhanced": {
+					"name": "Enhanced Maribor Forest",
+					"effect": "Accelerates the generation of Adrenaline Points. Extended duration.\n+0.15 Adrenaline Point gain"
+				},
+				"superior": {
+					"name": "Superior Maribor Forest",
+					"effect": "Accelerates the generation of Adrenaline Points. Extended duration. Grants 1 Adrenaline Point upon consumption.\n+0.15 Adrenaline Point gain"
+				}
+			}
+		},
+		{
+			"id": "clearance",
+			"image": "potion_ofclearance",
+			"types": {
+				"standard": {
+					"name": "Potion of Clearance",
+					"effect": "Returns all Ability Points spent to develop Abilities to the available pool so you can redistribute them."
+				}
+			}
+		},
+		{
+			"id": "petris_philter",
+			"image": "potion_petrisphilter",
+			"types": {
+				"standard": {
+					"name": "Petri's Philter",
+					"effect": "Increases Sign intensity.\n+15% Sign intensity"
+				},
+				"enhanced": {
+					"name": "Enhanced Petri's Philter",
+					"effect": "Increases Sign intensity. Extended duration.\n+20% Sign intensity"
+				},
+				"superior": {
+					"name": "Superior Petri's Philter",
+					"effect": "Increases Sign intensity. Extended duration. Signs always apply their special effects.\n+25% Sign intensity"
+				}
+			}
+		},
+		{
+			"id": "swallow",
+			"image": "potion_swallow",
+			"types": {
+				"standard": {
+					"name": "Swallow",
+					"effect": "Accelerates Vitality regeneration. Vitality regeneration pauses for 2 seconds upon receiving damage.\n+80 Vitality regeneration\n+40 Vitality regeneration during combat"
+				},
+				"enhanced": {
+					"name": "Enhanced Swallow",
+					"effect": "Accelerates Vitality regeneration. Vitality regeneration pauses for 2 seconds upon receiving damage.\n+100 Vitality regeneration\n+65 Vitality regeneration during combat"
+				},
+				"superior": {
+					"name": "Superior Swallow",
+					"effect": "Accelerates Vitality regeneration. Taking damage does not interrupt regeneration.\n150 Vitality regeneration\n+80 Vitality regeneration during combat"
+				}
+			}
+		},
+		{
+			"id": "tawny_owl",
+			"image": "potion_tawnyowl",
+			"types": {
+				"standard": {
+					"name": "Tawny Owl",
+					"effect": "Accelerates Stamina regneration.\n5% Stamina regeneration in combat"
+				},
+				"enhanced": {
+					"name": "Enhanced Tawny Owl",
+					"effect": "Accelerates Stamina regeneration. Extended duration.\n+8% Stamina regeneration in combat"
+				},
+				"superior": {
+					"name": "Superior Tawny Owl",
+					"effect": "Accelerates Stamina regeneration. Extended duration. Never expires at night.\n+10% Stamina regeneration in combat"
+				}
+			}
+		},
+		{
+			"id": "thunderbolt",
+			"image": "potion_thunderbolt",
+			"types": {
+				"standard": {
+					"name": "Thunderbolt",
+					"effect": "Increases Attack Power.\n+30% Attack power"
+				},
+				"enhanced": {
+					"name": "Enhanced Thunderbolt",
+					"effect": "Increases Attack Power. Extended duration.\n+30% Attack power"
+				},
+				"superior": {
+					"name": "Superior Thunderbolt",
+					"effect": "Extended duration. Grants 100% critical hit chance during storms.\n+35% Attack power"
+				}
+			}
+		},
+		{
+			"id": "white_honey",
+			"image": "potion_whitehoney",
+			"types": {
+				"standard": {
+					"name": "White Honey",
+					"effect": "Clears Toxicity and cancels all active potion effects."
+				},
+				"enhanced": {
+					"name": "Enhanced White Honey",
+					"effect": "Clears Toxicity and cancels all active potion effects."
+				},
+				"superior": {
+					"name": "Superior White Honey",
+					"effect": "Clears Toxicity and cancels all active potion effects."
+				}
+			}
+		},
+		{
+			"id": "white_raffards",
+			"image": "potion_whiteraffards",
+			"types": {
+				"standard": {
+					"name": "White Raffard's Decoction",
+					"effect": "Immediately restores a portion of Vitality.\n35% Vitality (Non-NG+)\n+60% Vitality (NG+)"
+				},
+				"enhanced": {
+					"name": "Enhanced White Raffard's Decoction",
+					"effect": "Immediately restores a large portion of Vitality.\n+60% Vitality (Non-NG+)\n+80% Vitality (NG+)"
+				},
+				"superior": {
+					"name": "Superior White Raffard's Decoction",
+					"effect": "Restores Vitality immediately and fully. Grants immunity to damage for a short duration.\n 100% Vitality (Both Non-NG+ and NG+)"
+				}
+			}
+		}
+	],
+	"signs": [
+		{
+			"id": "aard",
+			"name": "Aard",
+			"image": "sign_aard",
+			"effect": "Offensive sign resulting in a telekinetic thrust that can stun, repel, knock down or disarm opponents, as well as remove barriers and other objects"
+		},
+		{
+			"id": "axii",
+			"name": "Axii",
+			"image": "sign_axii",
+			"effect": "Offensive sign creating a mental wave that triggers a hex that causes an enemy to fight alongside the caster"
+		},
+		{
+			"id": "igni",
+			"name": "Igni",
+			"image": "sign_igni",
+			"effect": "Offensive sign resulting in a pyrokinetic burst that can repel and ignite opponents, as well as start fires"
+		},
+		{
+			"id": "quen",
+			"name": "Quen",
+			"image": "sign_quen",
+			"effect": "Defensive sign forming a protective field around the caster"
+		},
+		{
+			"id": "yrden",
+			"name": "Yrden",
+			"image": "sign_yrden",
+			"effect": "Offensive sign creating a magical trap on the ground that triggers a limited number of times when traversed"
+		}	
+	]
+}
