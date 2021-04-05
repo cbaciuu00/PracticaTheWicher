@@ -31,7 +31,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity{
+public class    MainActivity extends AppCompatActivity{
 
     private ViewPager pager;
     private PagerAdapter pagerAdapter;

@@ -48,7 +48,6 @@ public class MonsterActivity extends AppCompatActivity {
     }
 
     public void cerrarMonster(View view) {
-        finishActivity(MonsterActivity.CONTEXT_INCLUDE_CODE);
-
+        finish();
     }
 }

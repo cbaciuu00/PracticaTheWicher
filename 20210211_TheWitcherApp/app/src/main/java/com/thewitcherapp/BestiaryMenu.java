@@ -16,19 +16,19 @@ public class BestiaryMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bestiary_menu);
 
-        button =(Button) findViewById(R.id.btnToBestiary);
+        /*button = (Button) findViewById(R.id.btnToBestiary);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openBestiaryActivity();
             }
-        });
+        });*/
     }
 
-    private void openBestiaryActivity() {
+    /*private void openBestiaryActivity() {
         Intent i = new Intent(this,BestiaryActivity.class);
         startActivity(i);
-    }
+    }*/
 
 
 }
