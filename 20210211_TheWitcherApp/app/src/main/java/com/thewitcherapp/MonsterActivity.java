@@ -15,8 +15,6 @@ import com.thewitcherapp.webview.Loader;
 
 public class MonsterActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +28,13 @@ public class MonsterActivity extends AppCompatActivity {
         String  monsterType = getIntent().getStringExtra("EXTRA_MONSTER_TYPE");
 
         ImageView imageView = findViewById(R.id.imvMonster);
-        TextView textViewType = findViewById(R.id.txvMonsterType);
-        textViewType.setText(monsterType);
+        //TextView textViewType = findViewById(R.id.txvMonsterType);
+        TextView textMonsterType = findViewById(R.id.txvMonsterType);
+        TextView txvMonsterName = findViewById(R.id.txvMonsterName);
+        //textViewType.setText(monsterType);
         imageView.setImageResource(img);
+        textMonsterType.setText(monsterType);
+        txvMonsterName.setText(titol);
 
         WebView webView = findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());

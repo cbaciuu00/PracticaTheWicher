@@ -42,25 +42,12 @@ public class BestiaryActivity extends AppCompatActivity implements OnSelectedIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bestiary);
 
-
-
-        // Crida assíncrona per descarregar el JSON
         Observable.fromCallable(() -> {
-            //---------------- START OF THREAD ------------------------------------
-            // Això és el codi que s'executarà en un fil
-
             return NetworkUtils.getJSon("https://raw.githubusercontent.com/cbaciuu00/PracticaTheWicher/main/bestiary.json");
-            //--------------- END OF THREAD-------------------------------------
         })
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe((retornInutil) -> {
-                    //-------------  UI THREAD ---------------------------------------
-                    // El codi que tenim aquí s'executa només quan el fil
-                    // ha acabat !! A més, aquest codi s'executa en el fil
-                    // d'interfície gràfica.
-                    adapterBestiary(retornInutil);
-                    //-------------  END OF UI THREAD ---------------------------------------
                 });
     }
 
@@ -82,35 +69,6 @@ public class BestiaryActivity extends AppCompatActivity implements OnSelectedIte
         return gson.fromJson(json, Bestiary.class);
     }
 
-    /*private String loadJSON(){
-        String json = "";
-        InputStream is = null;
-        try {
-            is = getResources().openRawResource(R.raw.bestiary);
-            InputStreamReader reader = new InputStreamReader(is);
-            BufferedReader reader2 = new BufferedReader(reader);
-
-            String line = "";
-            try {
-                while ((line = reader2.readLine()) != null) {
-                    json += line + "\n";
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-                return null;
-            }
-        } finally {
-            if(is!=null) {
-                try {
-                    is.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        return json;
-    }*/
-
     @Override
     public void onSelectedItem(MonsterType monsterTypeSeleccionat) {
         mRcyMonster = findViewById(R.id.rcyMonster);
@@ -123,7 +81,6 @@ public class BestiaryActivity extends AppCompatActivity implements OnSelectedIte
         aMonsterAdapter = new MonsterAdapter(monsterTypeSeleccionat,this,mMonster);
         mRcyMonster.setAdapter(aMonsterAdapter);
     }
-
 
     public void cerrarActivity(View view) {
         finish();
